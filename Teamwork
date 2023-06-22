@@ -1,0 +1,91 @@
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+class ElectronicsShop:
+    def __init__(self):
+        self.inventory = []
+
+    def add_product(self, products):
+        for product in products:
+            self.inventory.append(product)
+            print("Product '{}' added to the inventory.".format(product.name))
+
+    def display_inventory(self):
+        if not self.inventory:
+            print("Inventory is empty.")
+            return
+
+        print("Current Inventory:")
+        for product in self.inventory:
+            print("Name: {}, Price: UGX {}, Quantity: {}".format(product.name, product.price, product.quantity))
+
+    def search_product(self, name):
+        for product in self.inventory:
+            if product.name == name:
+                print("Product found in inventory:")
+                print("Name: {}, Price: UGX {}, Quantity: {}".format(product.name, product.price, product.quantity))
+                return
+
+        print("Product '{}' not found in inventory.".format(name))
+
+    def purchase_product(self, name, quantity):
+        for product in self.inventory:
+            if product.name == name:
+                if product.quantity >= quantity:
+                    product.quantity -= quantity
+                    total_cost = product.price * quantity
+                    print("Purchase successful!")
+                    print("Product: {}, Quantity: {}, Total Cost: UGX {}".format(product.name, quantity, total_cost))
+                    return
+                else:
+                    print("Insufficient quantity of '{}' in inventory.".format(name))
+                    return
+
+        print("Product '{}' not found in inventory.".format(name))
+
+
+def main():
+    shop = ElectronicsShop()
+
+    while True:
+        print("\nMENU:")
+        print("1. Add Product")
+        print("2. Display Inventory")
+        print("3. Search Product")
+        print("4. Purchase Product")
+        print("5. Quit")
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == "1":
+            products = []
+            product_count = int(input("Enter the number of products to add: "))
+
+            for _ in range(product_count):
+                name = input("Enter product name: ")
+                price = int(input("Enter product price in UGX: "))
+                quantity = int(input("Enter product quantity: "))
+
+                product = Product(name, price, quantity)
+                products.append(product)
+
+            shop.add_product(products)
+        elif choice == "2":
+            shop.display_inventory()
+        elif choice == "3":
+            name = input("Enter product name to search: ")
+            shop.search_product(name)
+        elif choice == "4":
+            name = input("Enter product name to purchase: ")
+            quantity = int(input("Enter quantity to purchase: "))
+            shop.purchase_product(name, quantity)
+        elif choice == "5":
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+
+if __name__ == "__main__":
+    main()
