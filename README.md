@@ -8,14 +8,3 @@
 ---
 
 ### 👨‍💻 About Me
-```ts
-const isaiah = {
-  fullName: "Isaiah Mukiibi",
-  role: "Front-End Developer @ Swangz Avenue",
-  location: "Kampala, Uganda 🇺🇬",
-  studies: "BSc in Information Technology @ Uganda Christian University",
-  passions: ["Cyber Security", "Cloud Engineering", "Digital Marketing", "Floristry","Events"],
-  hobbies: ["Arranging flowers", "Writing & Debugging codes", "Exploring nature + tech fusion"]
-}
-
-}
