@@ -47,13 +47,6 @@
 
 **Soft Skills:** Team Collaboration, Creativity, Adaptability, Problem Solving
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Isaiahmukiibi&show_icons=true&theme=tokyonight&count_private=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Isaiahmukiibi&layout=compact&theme=tokyonight" width="48%" />
-</p>
-
 ## 🌐 Connect With Me
 
 <p align="center">
@@ -74,7 +67,7 @@
 - 📚 Balancing tech studies with my passion for floristry
 
 ## 🌿 Fun Fact
-When I'm not coding, you'll find me arranging beautiful flower bouquets or exploring how technology can intersect with nature!
+When I'm not coding, you'll find me arranging beautiful flower bouquets, Swangz Avenue or exploring how technology can intersect with nature!
 
 ---
 
