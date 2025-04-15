@@ -24,6 +24,7 @@
   - Arranging flowers
   - Writing & Debugging codes
   - Exploring nature + tech fusion
+  - Videography
 
 ## 🚀 Tech Stack I'm Working With
 
